@@ -82,6 +82,11 @@ section{
     font-size: 1em;
     
 }
+
+.search-bar > input:hover{
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 gainsboro;
+}
 .lucky-search{
     width: 130px;
     height: 38px;
@@ -142,4 +147,41 @@ section{
 }
 .footer-left{
     margin-left: 20px; 
+}
+
+
+@media (max-width: 730px){
+
+
+    .footer-about{
+        flex-direction: column;
+        padding: 10px 5px;
+        height: 80px;
+
+    }
+
+}
+@media (max-width: 600px){
+
+
+    .search-bar{
+        width: 98vw;
+    }
+
+
+}
+
+@media (max-height: 560px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    section{
+        margin-bottom: 30px
+    }
+    .footer-about{
+        position: relative;
+    }
+
 }
